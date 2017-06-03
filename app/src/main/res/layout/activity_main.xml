@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.edu.cetis108.gvlv_app002.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="9dp">
+
+        <EditText
+            android:id="@+id/txtNumero1"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView8"
+            android:layout_marginTop="61dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="70dp" />
+
+        <EditText
+            android:id="@+id/txtNumero2"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtNumero1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+            android:inputType="number"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="196dp"
+            tools:layout_editor_absoluteY="70dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="110dp"
+            android:layout_height="31dp"
+            android:layout_alignLeft="@+id/txtNumero2"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/txtNumero2"
+            android:layout_marginTop="25dp"
+            android:text="Numero 2"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="190dp"
+            tools:layout_editor_absoluteY="25dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="110dp"
+            android:layout_height="31dp"
+            android:layout_alignBaseline="@+id/textView8"
+            android:layout_alignBottom="@+id/textView8"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Numero 1"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="-9dp"
+            tools:layout_editor_absoluteY="-60dp" />
+
+        <TextView
+            android:id="@+id/lblResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtNumero1"
+            android:layout_marginTop="27dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnSumar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnMultiplicar"
+            android:layout_alignEnd="@+id/txtNumero1"
+            android:layout_alignRight="@+id/txtNumero1"
+            android:layout_marginBottom="21dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:onClick="btnSumar_onCLick"
+            android:text="suma"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnRestar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnSumar"
+            android:layout_alignEnd="@+id/textView8"
+            android:layout_alignRight="@+id/textView8"
+            android:onClick="btnRestar_onCLick"
+            android:text="restar"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnMultiplicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="59dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/txtNumero2"
+            android:layout_toStartOf="@+id/txtNumero2"
+            android:onClick="btnMultiplicar_onCLick"
+            android:text="Multiplicacion"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnDividir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnRestar"
+            android:layout_alignStart="@+id/btnRestar"
+            android:layout_alignTop="@+id/btnMultiplicar"
+            android:onClick="btnDividir_onCLick"
+            android:text="division"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
